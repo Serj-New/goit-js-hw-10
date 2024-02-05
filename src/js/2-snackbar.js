@@ -15,9 +15,9 @@ function onFormBtn(evt) {
 
         setTimeout(() => {
             if (state === 'fulfilled') {
-                resolve(`Fulfilled promise in ${delay}ms`);
+                resolve(`✅ Fulfilled promise in ${delay}ms`);
               } else {
-                reject(`Rejected promise in ${delay}ms`);
+                reject(`❌ Rejected promise in ${delay}ms`);
               }
         }, delay);
     })
@@ -36,7 +36,7 @@ function onSuccess(result) {
         messageColor: 'white',
         messageSize: '16px',
         backgroundColor: '#59A10D',
-        iconUrl: '../img/success.svg',
+        // iconUrl: '../img/success.svg',
         iconColor: 'white',
     });
 };
@@ -49,7 +49,7 @@ function onError(error) {
         messageColor: 'white',
         messageSize: '16px',
         backgroundColor: '#ef4040',
-        iconUrl: '../img/error.svg',
+        // iconUrl: '../img/error.svg',
         iconColor: 'white',
         position: 'topRight',
     });
