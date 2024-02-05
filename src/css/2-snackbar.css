@@ -1,0 +1,82 @@
+@import url('./styles.css');
+
+.form {
+    margin-top: 36px;
+    display: flex;
+    flex-direction: column;
+    width: 360px;
+    gap: 16px;
+}
+
+input[type="number"] {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #2e2f42;
+    border: 1px solid #808080;
+    border-radius: 4px;
+    width: 360px;
+    height: 40px;
+    margin-top: 8px;
+    padding: 8px 16px;
+}
+
+input[type="number"]:hover {
+    border-color: #000;
+}
+
+input[type="number"]:active,
+input[type="number"]:focus {
+    outline-color: #4e75ff;
+    color: #000;
+}
+
+fieldset {
+    margin: 0;
+    padding: 14px 48px 8px 28px;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #808080;
+    border-radius: 4px;
+    stroke-width: 1px;
+    stroke: #808080;
+}
+
+fieldset:hover {
+    border-color: #000;
+}
+
+fieldset label {
+    display: flex;
+    gap: 8px;
+    align-items:center;
+    height: 32px;
+}
+
+fieldset label:first-of-type {
+    margin-left: 20px;
+}
+
+input[type="radio"] {
+    margin: 6px;
+    width: 20px;
+    height: 20px;
+}
+
+button[type="submit"] {
+    border-radius: 8px;
+    padding: 8px 16px;
+    width: 360px;
+    height: 40px;
+    background: #4e75ff;
+    font-weight: 500;
+    color: #fff;
+    margin-top: 8px;
+}
+
+button[type="submit"]:hover,
+button[type="submit"]:focus {
+    background: #6c8cff;
+}
