@@ -5,7 +5,7 @@ import "flatpickr/dist/flatpickr.min.css";
 import iziToast from "izitoast";
 import "izitoast/dist/css/iziToast.min.css";
 
-const dateImput = document.querySelector('#datetime-picker');
+const dateInput = document.querySelector('#datetime-picker');
 const btnStart = document.querySelector('[data-start]');
 btnStart.addEventListener('click', onBtnStartClick);
 let userSelectedDate = null;
@@ -45,10 +45,10 @@ const options = {
     },
 };
 
-flatpickr(dateImput, options);
+flatpickr(dateInput, options);
 
 function onBtnStartClick() {
-    dateImput.setAttribute('disabled', 'true');
+    dateInput.setAttribute('disabled', 'true');
     
     const intervalId = setInterval(() => {
         const term = userSelectedDate.getTime() - Date.now();
@@ -62,7 +62,7 @@ function onBtnStartClick() {
             btnStart.setAttribute('disabled', 'true');
         } else {
             clearInterval(intervalId);
-            dateImput.removeAttribute('disabled');
+            dateInput.removeAttribute('disabled');
         }
     }, 1000);
 }
